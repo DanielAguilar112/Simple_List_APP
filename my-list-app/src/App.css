@@ -1,0 +1,120 @@
+/* Container & Layout */
+.screen-wrapper {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: flex-start; /* Aligns to the top instead of middle */
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #414142; /* One solid, clean background color */
+  margin: 0;
+  padding: 0;
+}
+
+.app-card {
+  width: 100%;
+  max-width: 420px;
+  margin-top: 40px; /* Space from the very top of the screen */
+  background: rgb(104, 43, 43);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05); /* Softer shadow */
+  height: fit-content;
+}
+
+h2 { text-align: center; color: #030202; margin-top: 0; }
+
+/* Tabs */
+.tab-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  background: #000000;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.tab-btn.active {
+  background: rgb(50, 41, 41);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-weight: bold;
+  color: #e02222;
+}
+
+/* Inputs */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  outline: none;
+}
+
+.add-btn {
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Advanced Buttons */
+.action-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 2px solid #000000;
+  color: #ffffff;
+  background: rgb(64, 61, 61);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.action-btn:hover { background: #16191d; }
+
+/* List Items */
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.item-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.delete-btn:hover { opacity: 1; }
