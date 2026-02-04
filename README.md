@@ -48,3 +48,12 @@ Source Code Structure
 src/App.jsx: Contains the main application logic, state management, and styles.
 
 package.json: Contains project dependencies and scripts.
+
+------------------------------------------------------------------------------
+How to change stuff
+1. change code in vscode
+2. type vercel --prod in terminal
+
+
+Production: https://my-list-j6m3k4ljl-daniels-projects-34bd971c.vercel.app
+Aliased: https://my-list-app-one.vercel.app 

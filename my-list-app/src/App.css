@@ -1,3 +1,15 @@
+/* This forces the background to cover the whole screen */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f2f5; 
+  display: flex;
+  justify-content: center;
+}
+
+
 /* Container & Layout */
 .screen-wrapper {
   display: flex;
