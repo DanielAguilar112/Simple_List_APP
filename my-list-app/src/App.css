@@ -17,7 +17,7 @@ html, body, #root {
   align-items: flex-start; /* Aligns to the top instead of middle */
   min-height: 100vh;
   width: 100vw;
-  background-color: #414142; /* One solid, clean background color */
+  background-color: #505052; /* One solid, clean background color */
   margin: 0;
   padding: 0;
 }

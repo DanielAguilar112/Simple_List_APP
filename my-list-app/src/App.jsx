@@ -1,13 +1,24 @@
-import React, { useState } from 'react';
-import './App.css'; // Make sure this line is here!
+import React, { useState, useEffect } from 'react'; // 1. Added useEffect here
+import './App.css'; 
 
 export default function SimpleListApp() {
+  // 2. Modified state to check LocalStorage first
+  const [lists, setLists] = useState(() => {
+    const savedData = localStorage.getItem('taskmaster_data');
+    return savedData ? JSON.parse(savedData) : {
+      Personal: [{ id: 1, text: 'Go to the gym', selected: false }],
+      Work: [{ id: 1, text: 'Create new api', selected: false }], 
+      Groceries: [{ id: 1, text: 'Milk', selected: false }]
+    };
+  });
+
   const [activeTab, setActiveTab] = useState('Personal');
   const [inputValue, setInputValue] = useState('');
-  const [lists, setLists] = useState({
-    Personal: [{ id: 1, text: 'Go to the gym', selected: false }],
-    Work: [{ id: 1, text: 'Create new api', selected: false }], Groceries: [{ id: 1, text: 'Milk', selected: false }]
-  });
+
+  // 3. Added the "Watcher" to save every time lists changes
+  useEffect(() => {
+    localStorage.setItem('taskmaster_data', JSON.stringify(lists));
+  }, [lists]);
 
   const updateList = (newList) => setLists({ ...lists, [activeTab]: newList });
 
