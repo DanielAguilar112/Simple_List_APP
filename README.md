@@ -7,6 +7,10 @@ Due Date: Feb 3, 2026
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
+**🚀 [View Live Demo](https://my-list-app-one.vercel.app/)**
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Project Overview
 This is a functional React-based list application designed to manage tasks across multiple categories. It features a modern dark-mode interface and advanced list manipulation tools.
 
