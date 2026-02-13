@@ -7,6 +7,8 @@ COURSE:       CS 402 - Mobile Application Development
 USER ID:      danielaguilar112
 BASE URL:     https://mec402.boisestate.edu/csclasses/cs402/codesnips
 
+--------------------------------------------------------------
+**🚀 [View Live Demo](https://my-list-app-one.vercel.app/)**
 ------------------------------------------------------------
 1. PROJECT DESCRIPTION
 ------------------------------------------------------------
